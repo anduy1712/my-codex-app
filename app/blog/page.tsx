@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import { Button } from "@/components/atoms/button";
 
-const Page = () => {
+export default function Page() {
   return (
-    <div>Page</div>
-  )
+    <div>
+      <Button>Alo</Button>
+    </div>
+  );
 }
-
-export default Page
