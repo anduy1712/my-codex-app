@@ -1,9 +1,6 @@
 import React, { forwardRef } from "react";
 
-type TButtonProps = {
-  className?: string;
-  children: React.ReactNode;
-};
+import { TButtonProps } from "./types";
 
 // probably not use React.FC
 // Want a deep dive, See https://javascript.plainenglish.io/react-fc-in-typescript-should-you-use-react-functional-components-af4295d87d80?sk=5cf8cd13186993f6cbcd55c8e67c9b15
