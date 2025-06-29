@@ -21,15 +21,19 @@ One way to limit the amount of props is to pass an object instead of primitive v
 Using TypeScript makes this even easier.
 
 // 👎 Don't pass values on by one if they're related
+```javascript
 <UserProfile
   bio={user.bio}
   name={user.name}
   email={user.email}
   subscription={user.subscription}
 />
+```
 
+```javascript
 // 👍 Use an object that holds all of them instead
 <UserProfile user={user} />
+```
 
 
 ### Use consistent capitalization
