@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "generate-icons": "npx @svgr/cli public/icons --typescript --memo --replace-attr-values '#000=currentColor'  --icon --svgo-config ./svgo.config.js --filename-case kebab --template ./svgr-icon-template.js --index-template ./icon-index-template.js --ext  tsx --no-prettier --out-dir components/atoms/icons",
     "prepare": "husky",
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -31,6 +32,8 @@
     "@commitlint/types": "^19.8.1",
     "@eslint/eslintrc": "^3",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.2",
+    "@svgr/cli": "^8.1.0",
+    "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
