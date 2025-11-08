@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/atoms/button";
+import Button from "@/components/atoms/button";
 import useBearStore from "@/stores/slices/bears/bear-store";
 
 export default function Page() {
