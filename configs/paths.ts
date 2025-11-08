@@ -1,4 +1,12 @@
-export const paths = {
+/**
+ * @PATHS contains all the routes of the application.
+ * That way you can easily change the routes in one place and have a single source of truth.
+ *
+ * @example
+ * `useRouter().push(PATHS.home.getHref());`
+ */
+
+export const PATHS = {
   home: {
     getHref: () => "/",
   },

@@ -16,7 +16,7 @@ function indexTemplate(files) {
     const exportName = file.exportName || pascalCase(fileName); // fallback if undefined
 
     compoundExportEntries.push(exportName);
-    return `import { default as ${exportName} } from './${fileName}';`;
+    return `import { default as ${exportName} } from "./${fileName}";`;
   });
 
   return `${importEntries.join("\n")}
