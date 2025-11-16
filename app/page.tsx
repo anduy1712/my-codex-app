@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Icons } from "@/components/atoms/icons";
+import Icons from "@/components/atoms/icons";
 
 export default function Home() {
   return (

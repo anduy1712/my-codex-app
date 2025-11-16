@@ -5,7 +5,7 @@ import { default as Star } from "./star";
 import { default as Vercel } from "./vercel";
 import { default as Window } from "./window";
 
-export const Icons = {
+const Icons = {
   Analytics,
   File,
   Globe,
@@ -13,3 +13,5 @@ export const Icons = {
   Vercel,
   Window,
 };
+
+export default Icons;
