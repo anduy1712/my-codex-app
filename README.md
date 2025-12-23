@@ -96,6 +96,10 @@ pnpm dev
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+## 👥 For New Developers
+
+**First time contributing?** Read [CONTRIBUTING.md](./CONTRIBUTING.md) - it has everything you need to get started.
+
 ## 📝 Available Scripts
 
 | Script                | Description                              |
