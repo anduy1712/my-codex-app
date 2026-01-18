@@ -2,7 +2,7 @@
 
 A modern, production-ready Next.js application built with TypeScript, featuring Atomic Design architecture, comprehensive state management, and developer-focused tooling.
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Framework**: [Next.js 15.3.4](https://nextjs.org) (App Router)
 - **React**: 19.0.0
@@ -22,12 +22,12 @@ A modern, production-ready Next.js application built with TypeScript, featuring 
   - [zod](https://zod.dev/) - Schema validation
 - **Code Quality**: ESLint, Prettier, Husky, lint-staged, Commitlint
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Node.js 20.x or higher
 - pnpm 8.x or higher (recommended)
 
-## 🛠️ Quick Start
+## Quick Start
 
 ```bash
 # Clone and install
@@ -41,7 +41,7 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 my-codex-app/
@@ -64,7 +64,7 @@ my-codex-app/
 └── scripts/              # Build & automation scripts
 ```
 
-## 📝 Available Scripts
+## Available Scripts
 
 | Script                | Description                              |
 | --------------------- | ---------------------------------------- |
@@ -74,7 +74,7 @@ my-codex-app/
 | `pnpm lint`           | Run linting checks                       |
 | `pnpm generate-icons` | Generate React components from SVG icons |
 
-## 📚 Documentation
+## Documentation
 
 | Document                                             | Description                                        |
 | ---------------------------------------------------- | -------------------------------------------------- |
@@ -84,7 +84,7 @@ my-codex-app/
 | [Usage Examples](./docs/usage-examples.md)           | Dark mode, state management, styling examples      |
 | [Contributing](./CONTRIBUTING.md)                    | Git workflow, commit conventions, setup guide      |
 
-## 🚀 Deployment
+## Deployment
 
 ### Vercel (Recommended)
 
@@ -99,7 +99,7 @@ pnpm build
 pnpm start
 ```
 
-## 🔗 Learn More
+## Learn More
 
 - [Next.js Documentation](https://nextjs.org/docs)
 - [React Documentation](https://react.dev)
@@ -107,7 +107,7 @@ pnpm start
 - [Zustand Documentation](https://github.com/pmndrs/zustand)
 - [TanStack Query Documentation](https://tanstack.com/query)
 
-## 🤝 Contributing
+## Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines on:
 
@@ -115,10 +115,10 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines on:
 - Git workflow & commit conventions
 - Code review process
 
-## 📝 License
+## License
 
 Private project.
 
 ---
 
-**Built with ❤️ using Next.js and TypeScript**
+**Built with Next.js and TypeScript**
