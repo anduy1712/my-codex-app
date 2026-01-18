@@ -1,0 +1,64 @@
+version: 2
+updates:
+  # Cập nhật npm dependencies
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Ho_Chi_Minh"
+    open-pull-requests-limit: 5
+    pull-request-branch-name:
+      separator: "/"
+    commit-message:
+      prefix: "chore"
+      prefix-development: "chore"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "automated"
+    ignore:
+      # Bỏ qua các major version updates (semver-major)
+      - dependency-name: "*"
+        update-types:
+          - "version-update:semver-major"
+    # Chỉ cập nhật dependencies, không cập nhật devDependencies tự động
+    # (có thể bật lại nếu cần)
+    # allow:
+    #   - dependency-type: "production"
+    versioning-strategy: increase
+    # Nhóm các updates liên quan để tránh spam PR
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+        update-types:
+          - "minor"
+          - "patch"
+      development-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "minor"
+          - "patch"
+    # Cấu hình rebase strategy để giữ lịch sử commit sạch
+    rebase-strategy: "auto"
+
+  # Cập nhật GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Ho_Chi_Minh"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+    labels:
+      - "github-actions"
+      - "automated"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
