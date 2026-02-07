@@ -21,9 +21,11 @@ function indexTemplate(files) {
 
   return `${importEntries.join("\n")}
 
-export const Icons = {
+const Icons = {
   ${compoundExportEntries.join(",\n  ")}
 };
+
+export default Icons;
 `;
 }
 
