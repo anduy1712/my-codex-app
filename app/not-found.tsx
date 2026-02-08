@@ -3,6 +3,9 @@ import Link from "next/link";
 import { PATHS } from "@/utils/paths";
 
 export default function NotFound() {
+  const a = 3;
+  console.log({ a });
+
   return (
     <div className="mt-52 flex flex-col items-center font-semibold">
       <h1>404 - Not Found</h1>
