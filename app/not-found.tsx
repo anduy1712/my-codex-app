@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { PATHS } from "@/configs/paths";
+import { PATHS } from "@/utils/paths";
 
 export default function NotFound() {
   return (
