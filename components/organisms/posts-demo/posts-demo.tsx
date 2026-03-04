@@ -1,6 +1,6 @@
 "use client";
 
-import { usePosts, useCreatePost } from "@/hooks/queries/use-posts";
+import { useCreatePost, usePosts } from "@/hooks/queries/use-posts";
 
 function PostsDemo() {
   const { data, isLoading, error } = usePosts();
@@ -8,6 +8,7 @@ function PostsDemo() {
 
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
+  if (!data) return <p>No data</p>;
 
   return (
     <div className="space-y-4">
